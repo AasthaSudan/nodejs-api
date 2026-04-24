@@ -1,0 +1,16 @@
+{
+  "name": "ca-2-api",
+  "version": "1.0.0",
+  "description": "Simple Node.js Express API for CA2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}
