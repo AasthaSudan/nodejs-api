@@ -1,17 +1,12 @@
 FROM node:18-alpine
 
-# Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Install app dependencies
 COPY package*.json ./
 RUN npm install
 
-# Bundle app source
 COPY . .
 
-# Expose port
-EXPOSE 3000
+EXPOSE 8080
 
-# Start command
 CMD [ "node", "index.js" ]
